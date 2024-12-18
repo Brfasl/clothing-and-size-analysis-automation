@@ -1,0 +1,13 @@
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\bin\Debug\Register.mdf
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\bin\Debug\Register_log.ldf
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\bin\Debug\Login And Register Page.exe.config
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\bin\Debug\Login And Register Page.exe
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\bin\Debug\Login And Register Page.pdb
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login And Register Page.csprojAssemblyReference.cache
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login_And_Register_Page.RegisterPage.resources
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login_And_Register_Page.LoginPage.resources
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login_And_Register_Page.Properties.Resources.resources
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login And Register Page.csproj.GenerateResource.cache
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login And Register Page.csproj.CoreCompileInputs.cache
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login And Register Page.exe
+C:\Users\Berfin\source\repos\Login And Register\Login And Register Page\obj\Debug\Login And Register Page.pdb
