@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // createAccount
@@ -45,7 +46,7 @@
             this.createAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.createAccount.Location = new System.Drawing.Point(118, 440);
+            this.createAccount.Location = new System.Drawing.Point(91, 444);
             this.createAccount.Name = "createAccount";
             this.createAccount.Size = new System.Drawing.Size(95, 13);
             this.createAccount.TabIndex = 17;
@@ -56,7 +57,7 @@
             // 
             this.dontHaveAccount.AutoSize = true;
             this.dontHaveAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dontHaveAccount.Location = new System.Drawing.Point(106, 414);
+            this.dontHaveAccount.Location = new System.Drawing.Point(79, 418);
             this.dontHaveAccount.Name = "dontHaveAccount";
             this.dontHaveAccount.Size = new System.Drawing.Size(141, 13);
             this.dontHaveAccount.TabIndex = 18;
@@ -69,7 +70,7 @@
             this.login.FlatAppearance.BorderSize = 0;
             this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login.ForeColor = System.Drawing.Color.White;
-            this.login.Location = new System.Drawing.Point(63, 364);
+            this.login.Location = new System.Drawing.Point(36, 368);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(216, 35);
             this.login.TabIndex = 16;
@@ -82,7 +83,7 @@
             this.showPassword.AutoSize = true;
             this.showPassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showPassword.Location = new System.Drawing.Point(160, 307);
+            this.showPassword.Location = new System.Drawing.Point(133, 306);
             this.showPassword.Name = "showPassword";
             this.showPassword.Size = new System.Drawing.Size(119, 21);
             this.showPassword.TabIndex = 15;
@@ -95,7 +96,7 @@
             this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(63, 260);
+            this.password.Location = new System.Drawing.Point(36, 264);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(216, 21);
             this.password.TabIndex = 9;
@@ -106,7 +107,7 @@
             this.userName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.userName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.userName.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.Location = new System.Drawing.Point(63, 179);
+            this.userName.Location = new System.Drawing.Point(36, 183);
             this.userName.Multiline = true;
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(216, 21);
@@ -118,7 +119,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(59, 236);
+            this.label4.Location = new System.Drawing.Point(32, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 21);
             this.label4.TabIndex = 8;
@@ -130,7 +131,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(59, 155);
+            this.label2.Location = new System.Drawing.Point(32, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 21);
             this.label2.TabIndex = 10;
@@ -141,18 +142,37 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label1.Location = new System.Drawing.Point(58, 87);
+            this.label1.Location = new System.Drawing.Point(31, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 27);
             this.label1.TabIndex = 6;
             this.label1.Text = "Get Started";
+            // 
+            // closeButton
+            // 
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.ForeColor = System.Drawing.Color.SlateBlue;
+            this.closeButton.Location = new System.Drawing.Point(241, 12);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(32, 32);
+            this.closeButton.TabIndex = 19;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.closeButton_MouseDown);
+            this.closeButton.MouseLeave += new System.EventHandler(this.closeButton_MouseLeave);
+            this.closeButton.MouseHover += new System.EventHandler(this.closeButton_MouseHover);
+            this.closeButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.closeButton_MouseUp);
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(385, 639);
+            this.ClientSize = new System.Drawing.Size(285, 544);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.createAccount);
             this.Controls.Add(this.dontHaveAccount);
             this.Controls.Add(this.login);
@@ -186,5 +206,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button closeButton;
     }
 }

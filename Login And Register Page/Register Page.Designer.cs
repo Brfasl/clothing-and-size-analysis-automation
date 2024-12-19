@@ -41,6 +41,7 @@
             this.register = new System.Windows.Forms.Button();
             this.haveAccount = new System.Windows.Forms.Label();
             this.backtoLogin = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -197,12 +198,31 @@
             this.backtoLogin.Text = "Back to LOGIN";
             this.backtoLogin.Click += new System.EventHandler(this.backtoLogin_Click);
             // 
+            // closeButton
+            // 
+            this.closeButton.FlatAppearance.BorderSize = 0;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.ForeColor = System.Drawing.Color.SlateBlue;
+            this.closeButton.Location = new System.Drawing.Point(241, 12);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(32, 32);
+            this.closeButton.TabIndex = 8;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.closeButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.closeButton_MouseDown);
+            this.closeButton.MouseLeave += new System.EventHandler(this.closeButton_MouseLeave);
+            this.closeButton.MouseHover += new System.EventHandler(this.closeButton_MouseHover);
+            this.closeButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.closeButton_MouseUp);
+            // 
             // RegisterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(285, 544);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.backtoLogin);
             this.Controls.Add(this.haveAccount);
             this.Controls.Add(this.register);
@@ -242,6 +262,7 @@
         private System.Windows.Forms.Button register;
         private System.Windows.Forms.Label haveAccount;
         private System.Windows.Forms.Label backtoLogin;
+        private System.Windows.Forms.Button closeButton;
     }
 }
 
