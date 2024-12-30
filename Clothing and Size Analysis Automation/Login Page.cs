@@ -88,8 +88,8 @@ namespace Login_And_Register_Page
                 // Giriş kontrolü
                 if (reader.HasRows)
                 {
-                    RibbonForm3 rbnfrm3 = new RibbonForm3();
-                    rbnfrm3.Show();
+                    FluentDesignForm1 fltdsgn1 = new FluentDesignForm1();
+                    fltdsgn1.Show();
                     this.Hide();
                     // Örnek: Ana sayfa
 

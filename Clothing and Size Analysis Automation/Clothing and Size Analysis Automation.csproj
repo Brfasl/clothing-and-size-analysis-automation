@@ -54,6 +54,12 @@
     <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +73,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FluentDesignForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FluentDesignForm1.Designer.cs">
+      <DependentUpon>FluentDesignForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductItemControl.Designer.cs">
+      <DependentUpon>ProductItemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +105,12 @@
     <Compile Include="RibbonForm3.Designer.cs">
       <DependentUpon>RibbonForm3.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FluentDesignForm1.resx">
+      <DependentUpon>FluentDesignForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductItemControl.resx">
+      <DependentUpon>ProductItemControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Register Page.resx">
       <DependentUpon>Register Page.cs</DependentUpon>
@@ -134,9 +158,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -145,6 +167,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\kiş2.jpg" />
+    <None Include="Resources\kiş1.jpg" />
+    <None Include="Resources\button-up sweater.jpg" />
+    <None Include="Resources\cea58d1b-a30a-457d-aa6d-327dc484239f.jpg" />
+    <None Include="Resources\bocustomer_32x32.png" />
+    <None Include="Resources\boemployee_32x32.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\female_32x32.png" />
+    <None Include="Resources\480219046757dd01bbe21d9f8bb4d166.jpg" />
+    <None Include="Resources\foto1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

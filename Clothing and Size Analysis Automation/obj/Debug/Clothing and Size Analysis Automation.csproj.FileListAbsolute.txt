@@ -1,3 +1,14 @@
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csprojAssemblyReference.cache
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.FluentDesignForm1.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RegisterPage.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.LoginPage.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Properties.Resources.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RibbonForm3.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.GenerateResource.cache
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe.licenses
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.CoreCompileInputs.cache
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Database1.mdf
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Database1_log.ldf
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Login And Register Page.exe.config
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Login And Register Page.exe
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Login And Register Page.pdb
@@ -7,18 +18,37 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Utils.v21.2.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraBars.v21.2.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraEditors.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraGrid.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraLayout.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraPrinting.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.Core.Desktop.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.Core.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Pdf.v21.2.Core.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Pdf.v21.2.Drawing.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Sparkline.v21.2.Core.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.RichEdit.v21.2.Core.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraTreeList.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Images.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Office.v21.2.Core.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Data.v21.2.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Printing.v21.2.Core.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Data.Desktop.v21.2.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Utils.v21.2.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraBars.v21.2.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraEditors.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraGrid.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraLayout.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraPrinting.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.Core.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraScheduler.v21.2.Core.Desktop.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Pdf.v21.2.Core.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Sparkline.v21.2.Core.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.RichEdit.v21.2.Core.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraTreeList.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.Office.v21.2.Core.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.Data.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.Data.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.Data.v21.2.resources.dll
@@ -39,6 +69,26 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraEditors.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraEditors.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraEditors.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraScheduler.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraScheduler.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraScheduler.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraScheduler.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraScheduler.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraScheduler.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraScheduler.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraScheduler.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
@@ -47,16 +97,19 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.Sparkline.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.Sparkline.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.Sparkline.v21.2.Core.resources.dll
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csprojAssemblyReference.cache
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RegisterPage.resources
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.LoginPage.resources
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Properties.Resources.resources
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.GenerateResource.cache
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe.licenses
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.CoreCompileInputs.cache
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.Office.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.Office.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.Office.v21.2.Core.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.Office.v21.2.Core.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.CopyComplete
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.pdb
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Database1.mdf
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\Database1_log.ldf
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RibbonForm3.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.ProductItemControl.resources
