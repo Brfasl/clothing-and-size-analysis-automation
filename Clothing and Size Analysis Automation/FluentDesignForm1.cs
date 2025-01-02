@@ -21,16 +21,28 @@ namespace Login_And_Register_Page
         private void FluentDesignForm1_Load(object sender, EventArgs e)
         {
             // TileBar ayarlarını yapılandırma
-            KadinÜstPage.Width = KadinÜstPage.ItemSize * 3; // 3 sütun genişliği
-            KadinÜstPage.ScrollMode = TileControlScrollMode.None; // Kaydırmayı devre dışı bırak
-            KadinÜstPage.Hide();
+            KadinÜstPage1.Width = KadinÜstPage1.ItemSize * 3; // 3 sütun genişliği
+            KadinÜstPage1.ScrollMode = TileControlScrollMode.None; // Kaydırmayı devre dışı bırak
+            KadinÜstPage1.Hide();
         }
 
         private void KadinÜstGiyim_Click(object sender, EventArgs e)
         {
-            KadinÜstPage.Show();
+            KadinÜstPage1.Show();
+            KadinÜstPage2.Show();
         }
 
-       
+        private void ErkekÜstGiyim_Click(object sender, EventArgs e)
+        {
+            ErkekÜstPage1.Show();
+            ErkekÜstPage2.Show();
+
+        }
+
+        private void CocukÜstGiyim_Click(object sender, EventArgs e)
+        {
+            CocukÜstPage1.Show();
+            CocukÜstPage2.Show();
+        }
     }
 }
