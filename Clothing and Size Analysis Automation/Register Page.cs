@@ -30,7 +30,7 @@ namespace Login_And_Register_Page
                     return; // İşlemi sonlandır
                 }
                 con.Open();
-                string query = "INSERT INTO ABCD (Username, Email, Password) VALUES (@username, @email, @password)";
+                string query = "INSERT INTO register (Username, Email, Password) VALUES (@username, @email, @password)";
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@username", userName.Text);

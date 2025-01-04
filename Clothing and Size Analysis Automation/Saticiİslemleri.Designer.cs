@@ -31,26 +31,29 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.resim = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ekleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.aciklama = new System.Windows.Forms.RichTextBox();
+            this.beden = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.gogus = new DevExpress.XtraEditors.TextEdit();
+            this.basen = new DevExpress.XtraEditors.TextEdit();
+            this.adet = new DevExpress.XtraEditors.TextEdit();
+            this.fiyat = new DevExpress.XtraEditors.TextEdit();
+            this.bel = new DevExpress.XtraEditors.TextEdit();
+            this.urunAdi = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,15 +61,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.resim)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beden.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gogus.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adet.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fiyat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -157,15 +161,17 @@
             this.xtraTabPage1.Appearance.PageClient.ForeColor = System.Drawing.Color.White;
             this.xtraTabPage1.Appearance.PageClient.Options.UseForeColor = true;
             this.xtraTabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.xtraTabPage1.Controls.Add(this.simpleButton1);
-            this.xtraTabPage1.Controls.Add(this.richTextBox1);
-            this.xtraTabPage1.Controls.Add(this.comboBoxEdit1);
-            this.xtraTabPage1.Controls.Add(this.textEdit4);
-            this.xtraTabPage1.Controls.Add(this.textEdit5);
-            this.xtraTabPage1.Controls.Add(this.textEdit6);
-            this.xtraTabPage1.Controls.Add(this.textEdit3);
-            this.xtraTabPage1.Controls.Add(this.textEdit2);
-            this.xtraTabPage1.Controls.Add(this.textEdit1);
+            this.xtraTabPage1.Controls.Add(this.resim);
+            this.xtraTabPage1.Controls.Add(this.label10);
+            this.xtraTabPage1.Controls.Add(this.ekleButton);
+            this.xtraTabPage1.Controls.Add(this.aciklama);
+            this.xtraTabPage1.Controls.Add(this.beden);
+            this.xtraTabPage1.Controls.Add(this.gogus);
+            this.xtraTabPage1.Controls.Add(this.basen);
+            this.xtraTabPage1.Controls.Add(this.adet);
+            this.xtraTabPage1.Controls.Add(this.fiyat);
+            this.xtraTabPage1.Controls.Add(this.bel);
+            this.xtraTabPage1.Controls.Add(this.urunAdi);
             this.xtraTabPage1.Controls.Add(this.label5);
             this.xtraTabPage1.Controls.Add(this.label6);
             this.xtraTabPage1.Controls.Add(this.label4);
@@ -178,6 +184,218 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(316, 594);
             this.xtraTabPage1.Text = "Ürün İşlemleri";
+            // 
+            // resim
+            // 
+            this.resim.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.resim.Location = new System.Drawing.Point(99, 248);
+            this.resim.Name = "resim";
+            this.resim.Size = new System.Drawing.Size(123, 119);
+            this.resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.resim.TabIndex = 7;
+            this.resim.TabStop = false;
+            this.resim.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(2, 248);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 16);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Resim Seçiniz:";
+            // 
+            // ekleButton
+            // 
+            this.ekleButton.Appearance.BackColor = System.Drawing.Color.DarkGray;
+            this.ekleButton.Appearance.BackColor2 = System.Drawing.Color.DimGray;
+            this.ekleButton.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ekleButton.Appearance.Options.UseBackColor = true;
+            this.ekleButton.Appearance.Options.UseFont = true;
+            this.ekleButton.AppearanceDisabled.BackColor = System.Drawing.Color.DarkGray;
+            this.ekleButton.AppearanceDisabled.BackColor2 = System.Drawing.Color.DimGray;
+            this.ekleButton.AppearanceDisabled.Options.UseBackColor = true;
+            this.ekleButton.AppearanceHovered.BackColor = System.Drawing.Color.DarkGray;
+            this.ekleButton.AppearanceHovered.BackColor2 = System.Drawing.Color.DimGray;
+            this.ekleButton.AppearanceHovered.Options.UseBackColor = true;
+            this.ekleButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
+            this.ekleButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
+            this.ekleButton.AppearancePressed.Options.UseBackColor = true;
+            this.ekleButton.Location = new System.Drawing.Point(7, 564);
+            this.ekleButton.Name = "ekleButton";
+            this.ekleButton.Size = new System.Drawing.Size(101, 23);
+            this.ekleButton.TabIndex = 4;
+            this.ekleButton.Text = "Ekle";
+            this.ekleButton.Click += new System.EventHandler(this.ekleButton_Click);
+            // 
+            // aciklama
+            // 
+            this.aciklama.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.aciklama.Location = new System.Drawing.Point(99, 370);
+            this.aciklama.Name = "aciklama";
+            this.aciklama.Size = new System.Drawing.Size(214, 163);
+            this.aciklama.TabIndex = 3;
+            this.aciklama.Text = "";
+            // 
+            // beden
+            // 
+            this.beden.Location = new System.Drawing.Point(99, 40);
+            this.beden.Name = "beden";
+            this.beden.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.beden.Properties.Appearance.Options.UseBackColor = true;
+            this.beden.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.beden.Properties.Items.AddRange(new object[] {
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"});
+            this.beden.Size = new System.Drawing.Size(123, 20);
+            this.beden.TabIndex = 2;
+            // 
+            // gogus
+            // 
+            this.gogus.Location = new System.Drawing.Point(99, 72);
+            this.gogus.Name = "gogus";
+            this.gogus.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gogus.Properties.Appearance.Options.UseBackColor = true;
+            this.gogus.Size = new System.Drawing.Size(62, 20);
+            this.gogus.TabIndex = 1;
+            // 
+            // basen
+            // 
+            this.basen.Location = new System.Drawing.Point(99, 138);
+            this.basen.Name = "basen";
+            this.basen.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.basen.Properties.Appearance.Options.UseBackColor = true;
+            this.basen.Size = new System.Drawing.Size(62, 20);
+            this.basen.TabIndex = 1;
+            // 
+            // adet
+            // 
+            this.adet.Location = new System.Drawing.Point(99, 174);
+            this.adet.Name = "adet";
+            this.adet.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.adet.Properties.Appearance.Options.UseBackColor = true;
+            this.adet.Size = new System.Drawing.Size(62, 20);
+            this.adet.TabIndex = 1;
+            // 
+            // fiyat
+            // 
+            this.fiyat.Location = new System.Drawing.Point(99, 209);
+            this.fiyat.Name = "fiyat";
+            this.fiyat.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.fiyat.Properties.Appearance.Options.UseBackColor = true;
+            this.fiyat.Size = new System.Drawing.Size(62, 20);
+            this.fiyat.TabIndex = 1;
+            // 
+            // bel
+            // 
+            this.bel.Location = new System.Drawing.Point(99, 105);
+            this.bel.Name = "bel";
+            this.bel.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bel.Properties.Appearance.Options.UseBackColor = true;
+            this.bel.Size = new System.Drawing.Size(62, 20);
+            this.bel.TabIndex = 1;
+            // 
+            // urunAdi
+            // 
+            this.urunAdi.Location = new System.Drawing.Point(99, 12);
+            this.urunAdi.Name = "urunAdi";
+            this.urunAdi.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.urunAdi.Properties.Appearance.Options.UseBackColor = true;
+            this.urunAdi.Size = new System.Drawing.Size(165, 20);
+            this.urunAdi.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Basen (cm):";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 108);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 19);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Bel (cm):";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(98, 19);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Göğüs (cm):";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(3, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 19);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Adet:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Beden:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 368);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 19);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Açıklama:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 212);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 19);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Fiyat:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ürün Adı:";
             // 
             // gridControl1
             // 
@@ -349,195 +567,9 @@
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // label1
+            // openFileDialog1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ürün Adı:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 19);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Beden:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 19);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Göğüs (cm):";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 172);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Basen (cm):";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 139);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 19);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Bel (cm):";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(107, 43);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(165, 20);
-            this.textEdit1.TabIndex = 1;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(107, 136);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(62, 20);
-            this.textEdit2.TabIndex = 1;
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(107, 240);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(62, 20);
-            this.textEdit3.TabIndex = 1;
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(107, 103);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Size = new System.Drawing.Size(62, 20);
-            this.textEdit4.TabIndex = 1;
-            // 
-            // comboBoxEdit1
-            // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(107, 71);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.comboBoxEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL"});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(123, 20);
-            this.comboBoxEdit1.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(11, 243);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Fiyat:";
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(107, 169);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit5.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit5.Size = new System.Drawing.Size(62, 20);
-            this.textEdit5.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(11, 208);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Adet:";
-            // 
-            // textEdit6
-            // 
-            this.textEdit6.Location = new System.Drawing.Point(107, 205);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textEdit6.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit6.Size = new System.Drawing.Size(62, 20);
-            this.textEdit6.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 295);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 19);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Açıklama:";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox1.Location = new System.Drawing.Point(107, 297);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(214, 163);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.DarkGray;
-            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.DimGray;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.AppearanceDisabled.BackColor = System.Drawing.Color.DarkGray;
-            this.simpleButton1.AppearanceDisabled.BackColor2 = System.Drawing.Color.DimGray;
-            this.simpleButton1.AppearanceDisabled.Options.UseBackColor = true;
-            this.simpleButton1.AppearanceHovered.BackColor = System.Drawing.Color.DarkGray;
-            this.simpleButton1.AppearanceHovered.BackColor2 = System.Drawing.Color.DimGray;
-            this.simpleButton1.AppearanceHovered.Options.UseBackColor = true;
-            this.simpleButton1.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
-            this.simpleButton1.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
-            this.simpleButton1.AppearancePressed.Options.UseBackColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(15, 500);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(101, 23);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Text = "Ekle";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Saticiİslemleri
             // 
@@ -555,15 +587,16 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.resim)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beden.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gogus.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adet.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fiyat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -580,18 +613,21 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.SimpleButton ekleButton;
+        private System.Windows.Forms.RichTextBox aciklama;
+        private DevExpress.XtraEditors.ComboBoxEdit beden;
+        private DevExpress.XtraEditors.TextEdit gogus;
+        private DevExpress.XtraEditors.TextEdit basen;
+        private DevExpress.XtraEditors.TextEdit adet;
+        private DevExpress.XtraEditors.TextEdit fiyat;
+        private DevExpress.XtraEditors.TextEdit bel;
+        private DevExpress.XtraEditors.TextEdit urunAdi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox resim;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

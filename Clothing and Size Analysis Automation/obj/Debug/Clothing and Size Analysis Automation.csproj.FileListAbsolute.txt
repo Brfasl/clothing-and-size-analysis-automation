@@ -113,3 +113,10 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.pdb
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.ProductItemControl.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraRichEdit.v21.2.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraRichEdit.v21.2.xml
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\es\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Saticiİslemleri.resources

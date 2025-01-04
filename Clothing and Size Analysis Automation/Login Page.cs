@@ -76,7 +76,7 @@ namespace Login_And_Register_Page
                 con.Open();
 
                 // Kullanıcı bilgilerini kontrol eden SQL sorgusu
-                string query = "SELECT * FROM ABCD WHERE Username = @username AND Password = @password";
+                string query = "SELECT * FROM register WHERE Username = @username AND Password = @password";
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 // Parametreleri ekle
@@ -88,8 +88,9 @@ namespace Login_And_Register_Page
                 // Giriş kontrolü
                 if (reader.HasRows)
                 {
-                    FluentDesignForm1 fltdsgn1 = new FluentDesignForm1();
-                    fltdsgn1.Show();
+                    // Register formunu aç ve Login formunu kapat
+                    Saticiİslemleri stc = new Saticiİslemleri();// Register sayfasının formu
+                    stc.Show();  // Register sayfasını göster
                     this.Hide();
                     // Örnek: Ana sayfa
 
