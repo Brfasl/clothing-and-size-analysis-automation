@@ -31,17 +31,19 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.resim = new System.Windows.Forms.PictureBox();
+            this.güncellemeButton = new DevExpress.XtraEditors.SimpleButton();
+            this.silButton = new DevExpress.XtraEditors.SimpleButton();
+            this.resim1 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.ekleButton = new DevExpress.XtraEditors.SimpleButton();
-            this.aciklama = new System.Windows.Forms.RichTextBox();
-            this.beden = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.gogus = new DevExpress.XtraEditors.TextEdit();
-            this.basen = new DevExpress.XtraEditors.TextEdit();
-            this.adet = new DevExpress.XtraEditors.TextEdit();
-            this.fiyat = new DevExpress.XtraEditors.TextEdit();
-            this.bel = new DevExpress.XtraEditors.TextEdit();
-            this.urunAdi = new DevExpress.XtraEditors.TextEdit();
+            this.aciklama1 = new System.Windows.Forms.RichTextBox();
+            this.beden1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.gogus1 = new DevExpress.XtraEditors.TextEdit();
+            this.basen1 = new DevExpress.XtraEditors.TextEdit();
+            this.adet1 = new DevExpress.XtraEditors.TextEdit();
+            this.fiyat1 = new DevExpress.XtraEditors.TextEdit();
+            this.bel1 = new DevExpress.XtraEditors.TextEdit();
+            this.urunAdi1 = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,14 +63,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.resim)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.beden.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gogus.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.basen.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adet.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fiyat.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunAdi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resim1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beden1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gogus1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basen1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adet1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fiyat1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bel1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdi1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -161,17 +163,19 @@
             this.xtraTabPage1.Appearance.PageClient.ForeColor = System.Drawing.Color.White;
             this.xtraTabPage1.Appearance.PageClient.Options.UseForeColor = true;
             this.xtraTabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.xtraTabPage1.Controls.Add(this.resim);
+            this.xtraTabPage1.Controls.Add(this.güncellemeButton);
+            this.xtraTabPage1.Controls.Add(this.silButton);
+            this.xtraTabPage1.Controls.Add(this.resim1);
             this.xtraTabPage1.Controls.Add(this.label10);
             this.xtraTabPage1.Controls.Add(this.ekleButton);
-            this.xtraTabPage1.Controls.Add(this.aciklama);
-            this.xtraTabPage1.Controls.Add(this.beden);
-            this.xtraTabPage1.Controls.Add(this.gogus);
-            this.xtraTabPage1.Controls.Add(this.basen);
-            this.xtraTabPage1.Controls.Add(this.adet);
-            this.xtraTabPage1.Controls.Add(this.fiyat);
-            this.xtraTabPage1.Controls.Add(this.bel);
-            this.xtraTabPage1.Controls.Add(this.urunAdi);
+            this.xtraTabPage1.Controls.Add(this.aciklama1);
+            this.xtraTabPage1.Controls.Add(this.beden1);
+            this.xtraTabPage1.Controls.Add(this.gogus1);
+            this.xtraTabPage1.Controls.Add(this.basen1);
+            this.xtraTabPage1.Controls.Add(this.adet1);
+            this.xtraTabPage1.Controls.Add(this.fiyat1);
+            this.xtraTabPage1.Controls.Add(this.bel1);
+            this.xtraTabPage1.Controls.Add(this.urunAdi1);
             this.xtraTabPage1.Controls.Add(this.label5);
             this.xtraTabPage1.Controls.Add(this.label6);
             this.xtraTabPage1.Controls.Add(this.label4);
@@ -185,16 +189,62 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(316, 594);
             this.xtraTabPage1.Text = "Ürün İşlemleri";
             // 
-            // resim
+            // güncellemeButton
             // 
-            this.resim.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.resim.Location = new System.Drawing.Point(99, 248);
-            this.resim.Name = "resim";
-            this.resim.Size = new System.Drawing.Size(123, 119);
-            this.resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.resim.TabIndex = 7;
-            this.resim.TabStop = false;
-            this.resim.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.güncellemeButton.Appearance.BackColor = System.Drawing.Color.DarkGray;
+            this.güncellemeButton.Appearance.BackColor2 = System.Drawing.Color.DimGray;
+            this.güncellemeButton.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.güncellemeButton.Appearance.Options.UseBackColor = true;
+            this.güncellemeButton.Appearance.Options.UseFont = true;
+            this.güncellemeButton.AppearanceDisabled.BackColor = System.Drawing.Color.DarkGray;
+            this.güncellemeButton.AppearanceDisabled.BackColor2 = System.Drawing.Color.DimGray;
+            this.güncellemeButton.AppearanceDisabled.Options.UseBackColor = true;
+            this.güncellemeButton.AppearanceHovered.BackColor = System.Drawing.Color.DarkGray;
+            this.güncellemeButton.AppearanceHovered.BackColor2 = System.Drawing.Color.DimGray;
+            this.güncellemeButton.AppearanceHovered.Options.UseBackColor = true;
+            this.güncellemeButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
+            this.güncellemeButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
+            this.güncellemeButton.AppearancePressed.Options.UseBackColor = true;
+            this.güncellemeButton.Location = new System.Drawing.Point(100, 564);
+            this.güncellemeButton.Name = "güncellemeButton";
+            this.güncellemeButton.Size = new System.Drawing.Size(117, 23);
+            this.güncellemeButton.TabIndex = 8;
+            this.güncellemeButton.Text = "Güncelle";
+            this.güncellemeButton.Click += new System.EventHandler(this.güncellemeButton_Click);
+            // 
+            // silButton
+            // 
+            this.silButton.Appearance.BackColor = System.Drawing.Color.Maroon;
+            this.silButton.Appearance.BackColor2 = System.Drawing.Color.Red;
+            this.silButton.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.silButton.Appearance.Options.UseBackColor = true;
+            this.silButton.Appearance.Options.UseFont = true;
+            this.silButton.AppearanceDisabled.BackColor = System.Drawing.Color.DarkGray;
+            this.silButton.AppearanceDisabled.BackColor2 = System.Drawing.Color.DimGray;
+            this.silButton.AppearanceDisabled.Options.UseBackColor = true;
+            this.silButton.AppearanceHovered.BackColor = System.Drawing.Color.DarkGray;
+            this.silButton.AppearanceHovered.BackColor2 = System.Drawing.Color.DimGray;
+            this.silButton.AppearanceHovered.Options.UseBackColor = true;
+            this.silButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
+            this.silButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
+            this.silButton.AppearancePressed.Options.UseBackColor = true;
+            this.silButton.Location = new System.Drawing.Point(223, 564);
+            this.silButton.Name = "silButton";
+            this.silButton.Size = new System.Drawing.Size(90, 23);
+            this.silButton.TabIndex = 8;
+            this.silButton.Text = "Sil";
+            this.silButton.Click += new System.EventHandler(this.silButton_Click);
+            // 
+            // resim1
+            // 
+            this.resim1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.resim1.Location = new System.Drawing.Point(99, 248);
+            this.resim1.Name = "resim1";
+            this.resim1.Size = new System.Drawing.Size(123, 119);
+            this.resim1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.resim1.TabIndex = 7;
+            this.resim1.TabStop = false;
+            this.resim1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label10
             // 
@@ -222,92 +272,92 @@
             this.ekleButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
             this.ekleButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
             this.ekleButton.AppearancePressed.Options.UseBackColor = true;
-            this.ekleButton.Location = new System.Drawing.Point(7, 564);
+            this.ekleButton.Location = new System.Drawing.Point(3, 564);
             this.ekleButton.Name = "ekleButton";
-            this.ekleButton.Size = new System.Drawing.Size(101, 23);
+            this.ekleButton.Size = new System.Drawing.Size(91, 23);
             this.ekleButton.TabIndex = 4;
             this.ekleButton.Text = "Ekle";
             this.ekleButton.Click += new System.EventHandler(this.ekleButton_Click);
             // 
-            // aciklama
+            // aciklama1
             // 
-            this.aciklama.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.aciklama.Location = new System.Drawing.Point(99, 370);
-            this.aciklama.Name = "aciklama";
-            this.aciklama.Size = new System.Drawing.Size(214, 163);
-            this.aciklama.TabIndex = 3;
-            this.aciklama.Text = "";
+            this.aciklama1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.aciklama1.Location = new System.Drawing.Point(99, 370);
+            this.aciklama1.Name = "aciklama1";
+            this.aciklama1.Size = new System.Drawing.Size(214, 163);
+            this.aciklama1.TabIndex = 3;
+            this.aciklama1.Text = "";
             // 
-            // beden
+            // beden1
             // 
-            this.beden.Location = new System.Drawing.Point(99, 40);
-            this.beden.Name = "beden";
-            this.beden.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.beden.Properties.Appearance.Options.UseBackColor = true;
-            this.beden.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.beden1.Location = new System.Drawing.Point(99, 40);
+            this.beden1.Name = "beden1";
+            this.beden1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.beden1.Properties.Appearance.Options.UseBackColor = true;
+            this.beden1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.beden.Properties.Items.AddRange(new object[] {
+            this.beden1.Properties.Items.AddRange(new object[] {
             "XS",
             "S",
             "M",
             "L",
             "XL"});
-            this.beden.Size = new System.Drawing.Size(123, 20);
-            this.beden.TabIndex = 2;
+            this.beden1.Size = new System.Drawing.Size(123, 20);
+            this.beden1.TabIndex = 2;
             // 
-            // gogus
+            // gogus1
             // 
-            this.gogus.Location = new System.Drawing.Point(99, 72);
-            this.gogus.Name = "gogus";
-            this.gogus.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.gogus.Properties.Appearance.Options.UseBackColor = true;
-            this.gogus.Size = new System.Drawing.Size(62, 20);
-            this.gogus.TabIndex = 1;
+            this.gogus1.Location = new System.Drawing.Point(99, 72);
+            this.gogus1.Name = "gogus1";
+            this.gogus1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gogus1.Properties.Appearance.Options.UseBackColor = true;
+            this.gogus1.Size = new System.Drawing.Size(62, 20);
+            this.gogus1.TabIndex = 1;
             // 
-            // basen
+            // basen1
             // 
-            this.basen.Location = new System.Drawing.Point(99, 138);
-            this.basen.Name = "basen";
-            this.basen.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.basen.Properties.Appearance.Options.UseBackColor = true;
-            this.basen.Size = new System.Drawing.Size(62, 20);
-            this.basen.TabIndex = 1;
+            this.basen1.Location = new System.Drawing.Point(99, 138);
+            this.basen1.Name = "basen1";
+            this.basen1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.basen1.Properties.Appearance.Options.UseBackColor = true;
+            this.basen1.Size = new System.Drawing.Size(62, 20);
+            this.basen1.TabIndex = 1;
             // 
-            // adet
+            // adet1
             // 
-            this.adet.Location = new System.Drawing.Point(99, 174);
-            this.adet.Name = "adet";
-            this.adet.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.adet.Properties.Appearance.Options.UseBackColor = true;
-            this.adet.Size = new System.Drawing.Size(62, 20);
-            this.adet.TabIndex = 1;
+            this.adet1.Location = new System.Drawing.Point(99, 174);
+            this.adet1.Name = "adet1";
+            this.adet1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.adet1.Properties.Appearance.Options.UseBackColor = true;
+            this.adet1.Size = new System.Drawing.Size(62, 20);
+            this.adet1.TabIndex = 1;
             // 
-            // fiyat
+            // fiyat1
             // 
-            this.fiyat.Location = new System.Drawing.Point(99, 209);
-            this.fiyat.Name = "fiyat";
-            this.fiyat.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.fiyat.Properties.Appearance.Options.UseBackColor = true;
-            this.fiyat.Size = new System.Drawing.Size(62, 20);
-            this.fiyat.TabIndex = 1;
+            this.fiyat1.Location = new System.Drawing.Point(99, 209);
+            this.fiyat1.Name = "fiyat1";
+            this.fiyat1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.fiyat1.Properties.Appearance.Options.UseBackColor = true;
+            this.fiyat1.Size = new System.Drawing.Size(62, 20);
+            this.fiyat1.TabIndex = 1;
             // 
-            // bel
+            // bel1
             // 
-            this.bel.Location = new System.Drawing.Point(99, 105);
-            this.bel.Name = "bel";
-            this.bel.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.bel.Properties.Appearance.Options.UseBackColor = true;
-            this.bel.Size = new System.Drawing.Size(62, 20);
-            this.bel.TabIndex = 1;
+            this.bel1.Location = new System.Drawing.Point(99, 105);
+            this.bel1.Name = "bel1";
+            this.bel1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bel1.Properties.Appearance.Options.UseBackColor = true;
+            this.bel1.Size = new System.Drawing.Size(62, 20);
+            this.bel1.TabIndex = 1;
             // 
-            // urunAdi
+            // urunAdi1
             // 
-            this.urunAdi.Location = new System.Drawing.Point(99, 12);
-            this.urunAdi.Name = "urunAdi";
-            this.urunAdi.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.urunAdi.Properties.Appearance.Options.UseBackColor = true;
-            this.urunAdi.Size = new System.Drawing.Size(165, 20);
-            this.urunAdi.TabIndex = 1;
+            this.urunAdi1.Location = new System.Drawing.Point(99, 12);
+            this.urunAdi1.Name = "urunAdi1";
+            this.urunAdi1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.urunAdi1.Properties.Appearance.Options.UseBackColor = true;
+            this.urunAdi1.Size = new System.Drawing.Size(165, 20);
+            this.urunAdi1.TabIndex = 1;
             // 
             // label5
             // 
@@ -565,6 +615,7 @@
             this.gridView1.Appearance.ViewCaption.Options.UseBorderColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // openFileDialog1
@@ -579,6 +630,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "Saticiİslemleri";
             this.Text = "Saticiİslemleri";
+            this.Load += new System.EventHandler(this.Saticiİslemleri_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -587,14 +639,14 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.resim)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.beden.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gogus.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.basen.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adet.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fiyat.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.urunAdi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resim1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beden1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gogus1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basen1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adet1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fiyat1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bel1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urunAdi1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -614,20 +666,22 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.SimpleButton ekleButton;
-        private System.Windows.Forms.RichTextBox aciklama;
-        private DevExpress.XtraEditors.ComboBoxEdit beden;
-        private DevExpress.XtraEditors.TextEdit gogus;
-        private DevExpress.XtraEditors.TextEdit basen;
-        private DevExpress.XtraEditors.TextEdit adet;
-        private DevExpress.XtraEditors.TextEdit fiyat;
-        private DevExpress.XtraEditors.TextEdit bel;
-        private DevExpress.XtraEditors.TextEdit urunAdi;
+        private System.Windows.Forms.RichTextBox aciklama1;
+        private DevExpress.XtraEditors.ComboBoxEdit beden1;
+        private DevExpress.XtraEditors.TextEdit gogus1;
+        private DevExpress.XtraEditors.TextEdit basen1;
+        private DevExpress.XtraEditors.TextEdit adet1;
+        private DevExpress.XtraEditors.TextEdit fiyat1;
+        private DevExpress.XtraEditors.TextEdit bel1;
+        private DevExpress.XtraEditors.TextEdit urunAdi1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox resim;
+        private System.Windows.Forms.PictureBox resim1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private DevExpress.XtraEditors.SimpleButton güncellemeButton;
+        private DevExpress.XtraEditors.SimpleButton silButton;
     }
 }

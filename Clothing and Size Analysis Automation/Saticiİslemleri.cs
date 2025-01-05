@@ -21,7 +21,24 @@ namespace Login_And_Register_Page
 
         private void ekleButton_Click(object sender, EventArgs e)
         {
-            
+            Ekle();
+
+        }
+        public void Ekle()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into urun (UrunAdi,Beden,Gogus,Bel,Basen,Adet,Fiyat,Aciklama)" + "values (@urunAdi,@beden,@gogus,@bel,@basen,@adet,@fiyat,@aciklama)",con);
+            cmd.Parameters.AddWithValue("@urunAdi", urunAdi1.Text);
+            cmd.Parameters.AddWithValue("@beden", beden1.SelectedItem);
+            cmd.Parameters.AddWithValue("@gogus", gogus1.Text);
+            cmd.Parameters.AddWithValue("@bel", bel1.Text);
+            cmd.Parameters.AddWithValue("@basen", basen1.Text);
+            cmd.Parameters.AddWithValue("@adet", adet1.Text);
+            cmd.Parameters.AddWithValue("@fiyat", fiyat1.Text);
+            cmd.Parameters.AddWithValue("@aciklama", aciklama1.Text);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            Listele();
 
         }
 
@@ -37,12 +54,43 @@ namespace Login_And_Register_Page
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 // Seçilen resmi PictureBox'ta gösteriyoruz
-                resim.Image = Image.FromFile(openFileDialog.FileName);
+                resim1.Image = Image.FromFile(openFileDialog.FileName);
 
                 
             }
         }
 
-        
+        private void Saticiİslemleri_Load(object sender, EventArgs e)
+        {
+            Listele();
+        }
+        public void Listele()
+        {
+            string komut = "select * from urun ";
+            SqlDataAdapter db = new SqlDataAdapter(komut, con);
+            DataSet ds = new DataSet();
+            db.Fill(ds);
+            gridControl1.DataSource = ds.Tables[0];
+        }
+
+        private void güncellemeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void silButton_Click(object sender, EventArgs e)
+        {
+            Sil();
+
+        }
+        public void Sil()
+        {
+            con.Open();
+            string id = gridView1.GetFocusedRowCellValue("Id").ToString();
+            SqlCommand cmd = new SqlCommand("delete from urun where Id='" + id + "'", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            Listele();
+        }
     }
 }
