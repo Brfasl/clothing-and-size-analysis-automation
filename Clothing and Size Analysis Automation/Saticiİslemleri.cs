@@ -77,6 +77,20 @@ namespace Login_And_Register_Page
         {
 
         }
+        public void Güncelle() {
+        }
+
+        public void BilgiCek()
+        {
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+            urunAdi1.Text = gridView1.GetFocusedRowCellValue("UrunAdi").ToString();
+        }
 
         private void silButton_Click(object sender, EventArgs e)
         {
@@ -85,12 +99,18 @@ namespace Login_And_Register_Page
         }
         public void Sil()
         {
-            con.Open();
-            string id = gridView1.GetFocusedRowCellValue("Id").ToString();
-            SqlCommand cmd = new SqlCommand("delete from urun where Id='" + id + "'", con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            Listele();
+            DialogResult onay = MessageBox.Show("Kaydı Silmek İstediğinize Emin Misiniz", "Onay Kutusu", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (onay == DialogResult.Yes)
+            {
+                con.Open();
+                string id = gridView1.GetFocusedRowCellValue("Id").ToString();
+                SqlCommand cmd = new SqlCommand("delete from urun where Id='" + id + "'", con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Listele();
+            }
+            
+            
         }
     }
 }
