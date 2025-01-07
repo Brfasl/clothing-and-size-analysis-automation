@@ -2,7 +2,6 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RegisterPage.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.LoginPage.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Properties.Resources.resources
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RibbonForm3.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.GenerateResource.cache
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe.licenses
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.CoreCompileInputs.cache
@@ -111,7 +110,6 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csproj.CopyComplete
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.exe
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login And Register Page.pdb
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.ProductItemControl.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraRichEdit.v21.2.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\DevExpress.XtraRichEdit.v21.2.xml
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\de\DevExpress.XtraRichEdit.v21.2.resources.dll

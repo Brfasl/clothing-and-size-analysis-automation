@@ -37,11 +37,11 @@ namespace Login_And_Register_Page
 
                     con.Open();
                     SqlCommand cmd = new SqlCommand("INSERT INTO urun (UrunAdi, Beden, Kategori, Cinsiyet, Gogus, Bel, Basen, Adet, Fiyat, Aciklama, Resim)" +
-                                                    "VALUES (@urunAdi, @beden, @kategori, @cinsiyet, @gogus, @bel, @basen, @adet, @fiyat, @aciklama, @resim)", con);
+                                                    "VALUES (@urunAdi, @beden, @kategori, @giyimSecenekleri, @gogus, @bel, @basen, @adet, @fiyat, @aciklama, @resim)", con);
                     cmd.Parameters.AddWithValue("@urunAdi", urunAdi1.Text);
                     cmd.Parameters.AddWithValue("@beden", beden1.SelectedItem);
-                    cmd.Parameters.AddWithValue("@kategori", beden1.SelectedItem);
-                    cmd.Parameters.AddWithValue("@cinsiyet", beden1.SelectedItem);
+                    cmd.Parameters.AddWithValue("@kategori", kategori1.SelectedItem);
+                    cmd.Parameters.AddWithValue("@giyimSecenekleri", giyimSecenekleri1.SelectedItem);
                     cmd.Parameters.AddWithValue("@gogus", gogus1.Text);
                     cmd.Parameters.AddWithValue("@bel", bel1.Text);
                     cmd.Parameters.AddWithValue("@basen", basen1.Text);

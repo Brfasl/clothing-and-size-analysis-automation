@@ -14,85 +14,112 @@ namespace Login_And_Register_Page
         public CustomerProductView()
         {
             InitializeComponent();
-
         }
+
         private void FluentDesignForm1_Load(object sender, EventArgs e)
         {
-            // Form yüklendiğinde yapılacak işlemleri buraya yazabilirsiniz.
+            // Form yüklendiğinde yapılacak işlemler buraya eklenebilir.
         }
 
         public void UrunleriListele(string kategori, string giyimSecenekleri)
         {
-            // Seçilen kategoriye göre doğru paneli al
-            FlowLayoutPanel selectedPanel = null;
+            // Tek bir FlowLayoutPanel kullanıyoruz
+            flowLayoutPanel1.Controls.Clear();
 
-            if (kategori == "Kadın")
+            try
             {
-                if (giyimSecenekleri == "Üst")
-                    selectedPanel = KadinUstPanel;
-                else if (giyimSecenekleri == "Alt")
-                    selectedPanel = KadinAltPanel;
-            }
-            else if (kategori == "Erkek")
-            {
-                if (giyimSecenekleri == "Üst")
-                    selectedPanel = ErkekUstPanel;
-                else if (giyimSecenekleri == "Alt")
-                    selectedPanel = ErkekAltPanel;
-            }
-            else if (kategori == "Çocuk")
-            {
-                if (giyimSecenekleri == "Üst")
-                    selectedPanel = CocukUstPanel;
-                else if (giyimSecenekleri == "Alt")
-                    selectedPanel = CocukAltPanel;
-            }
-
-            if (selectedPanel != null)
-            {
-                // FlowLayoutPanel'deki önceki ürünleri temizle
-                selectedPanel.Controls.Clear();
-
-                // Kategoriye ve giyim türüne göre ürünleri veritabanından al
-                SqlDataAdapter da = new SqlDataAdapter("SELECT UrunAdi, Fiyat, Resim FROM urun WHERE Kategori = @kategori AND GiyimSecenekleri = @giyimSecenekleri", con);
-                da.SelectCommand.Parameters.AddWithValue("@kategori", kategori);
-                da.SelectCommand.Parameters.AddWithValue("@giyimSecenekleri", giyimSecenekleri);
+                con.Open();
+                string query = "SELECT UrunAdi, Beden, Fiyat, Resim, Aciklama FROM urun WHERE Kategori = @Kategori AND GiyimSecenekleri = @GiyimSecenekleri";
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                da.SelectCommand.Parameters.AddWithValue("@Kategori", kategori);
+                da.SelectCommand.Parameters.AddWithValue("@GiyimSecenekleri", giyimSecenekleri);
 
                 DataTable dt = new DataTable();
-                da.Fill(dt); // Veritabanındaki ürünleri DataTable'a yükle
+                da.Fill(dt);
 
-                // Her bir ürünü FlowLayoutPanel'e ekle
+                if (dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Bu kategoride ürün bulunamadı.");
+                    return;
+                }
+
                 foreach (DataRow row in dt.Rows)
                 {
-                    Panel panel = new Panel();
-                    panel.Width = 200;
-                    panel.Height = 300;
+                    Panel panel = new Panel
+                    {
+                        Width = 200,
+                        Height = 300,
+                        BorderStyle = BorderStyle.FixedSingle
+                    };
 
                     // Ürün adı
-                    Label lblUrunAdi = new Label();
-                    lblUrunAdi.Text = row["UrunAdi"].ToString();
-                    lblUrunAdi.Dock = DockStyle.Top;
+                    Label lblUrunAdi = new Label
+                    {
+                        Text = row["UrunAdi"].ToString(),
+                        Dock = DockStyle.Top,
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        Font = new Font("Arial", 10, FontStyle.Bold)
+                    };
                     panel.Controls.Add(lblUrunAdi);
 
                     // Ürün fiyatı
-                    Label lblFiyat = new Label();
-                    lblFiyat.Text = "Fiyat: " + row["Fiyat"].ToString() + " TL";
-                    lblFiyat.Dock = DockStyle.Top;
+                    Label lblFiyat = new Label
+                    {
+                        Text = "Fiyat: " + row["Fiyat"].ToString() + " TL",
+                        Dock = DockStyle.Top,
+                        TextAlign = ContentAlignment.MiddleCenter
+                    };
                     panel.Controls.Add(lblFiyat);
 
-                    // Ürün resmi
-                    PictureBox pictureBox = new PictureBox();
-                    byte[] resimByte = (byte[])row["Resim"];
-                    pictureBox.Image = ByteToResim(resimByte); // Byte dizisinden resmi Image'a çevirme
-                    pictureBox.Width = 150;
-                    pictureBox.Height = 150;
-                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-                    pictureBox.Dock = DockStyle.Fill;
-                    panel.Controls.Add(pictureBox);
+                    // Ürün beden
+                    Label lblBeden = new Label
+                    {
+                        Text = "Beden: " + row["Beden"].ToString(),
+                        Dock = DockStyle.Top,
+                        TextAlign = ContentAlignment.MiddleCenter
+                    };
+                    panel.Controls.Add(lblBeden);
 
-                    // Seçilen FlowLayoutPanel'e ekle
-                    selectedPanel.Controls.Add(panel);
+                    // Ürün açıklama
+                    Label lblAciklama = new Label
+                    {
+                        Text = "Açıklama: " + row["Aciklama"].ToString(),
+                        Dock = DockStyle.Top,
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        AutoSize = true
+                    };
+                    panel.Controls.Add(lblAciklama);
+
+                    // Ürün resmi
+                    PictureBox pictureBox = new PictureBox
+                    {
+                        Width = 150,
+                        Height = 150,
+                        SizeMode = PictureBoxSizeMode.Zoom,
+                        Dock = DockStyle.Top
+                    };
+
+                    if (row["Resim"] != DBNull.Value)
+                    {
+                        byte[] resimByte = (byte[])row["Resim"];
+                        pictureBox.Image = ByteToResim(resimByte);
+                    }
+                    else
+                    {
+                        pictureBox.Image = null; // Eğer resim yoksa null bırak
+                    }
+
+                    panel.Controls.Add(pictureBox);
+                    flowLayoutPanel1.Controls.Add(panel);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
             }
         }
 
@@ -104,83 +131,34 @@ namespace Login_And_Register_Page
             }
         }
 
-        // Kadın Üst Giyim butonunun click olayı
         private void KadinÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Kadın", "Üst");
-
-            // Tüm panelleri gizle
-            KadinAltPanel.Hide();
-            KadinUstPanel.Show();
-            ErkekAltPanel.Hide();
-            ErkekUstPanel.Hide();
-            CocukAltPanel.Hide();
-            CocukUstPanel.Hide();
+            UrunleriListele("Kadın", "Üst Giyim");
         }
 
-        // Kadın Alt Giyim butonunun click olayı
         private void KadinAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Kadın", "Alt");
-
-            KadinAltPanel.Show();
-            KadinUstPanel.Hide();
-            ErkekAltPanel.Hide();
-            ErkekUstPanel.Hide();
-            CocukAltPanel.Hide();
-            CocukUstPanel.Hide();
+            UrunleriListele("Kadın", "Alt Giyim");
         }
 
-        // Erkek Üst Giyim butonunun click olayı
         private void ErkekÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Erkek", "Üst");
-
-            KadinAltPanel.Hide();
-            KadinUstPanel.Hide();
-            ErkekAltPanel.Hide();
-            ErkekUstPanel.Show();
-            CocukAltPanel.Hide();
-            CocukUstPanel.Hide();
+            UrunleriListele("Erkek", "Üst Giyim");
         }
 
-        // Erkek Alt Giyim butonunun click olayı
         private void ErkekAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Erkek", "Alt");
-
-            KadinAltPanel.Hide();
-            KadinUstPanel.Hide();
-            ErkekAltPanel.Show();
-            ErkekUstPanel.Hide();
-            CocukAltPanel.Hide();
-            CocukUstPanel.Hide();
+            UrunleriListele("Erkek", "Alt Giyim");
         }
 
-        // Çocuk Üst Giyim butonunun click olayı
         private void CocukÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Çocuk", "Üst");
-
-            KadinAltPanel.Hide();
-            KadinUstPanel.Hide();
-            ErkekAltPanel.Hide();
-            ErkekUstPanel.Hide();
-            CocukAltPanel.Hide();
-            CocukUstPanel.Show();
+            UrunleriListele("Çocuk", "Üst Giyim");
         }
 
-        // Çocuk Alt Giyim butonunun click olayı
         private void CocukAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele("Çocuk", "Alt");
-
-            KadinAltPanel.Hide();
-            KadinUstPanel.Hide();
-            ErkekAltPanel.Hide();
-            ErkekUstPanel.Hide();
-            CocukAltPanel.Show();
-            CocukUstPanel.Hide();
+            UrunleriListele("Çocuk", "Alt Giyim");
         }
     }
 }

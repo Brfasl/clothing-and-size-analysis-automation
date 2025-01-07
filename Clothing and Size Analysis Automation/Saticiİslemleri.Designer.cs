@@ -307,7 +307,7 @@
             this.kategori1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.kategori1.Properties.Items.AddRange(new object[] {
-            " Kadın",
+            "Kadın",
             "Erkek",
             "Çocuk"});
             this.kategori1.Size = new System.Drawing.Size(123, 20);

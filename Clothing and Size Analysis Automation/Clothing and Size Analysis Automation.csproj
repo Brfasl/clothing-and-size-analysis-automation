@@ -84,12 +84,6 @@
     <Compile Include="FluentDesignForm1.Designer.cs">
       <DependentUpon>FluentDesignForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductItemControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ProductItemControl.Designer.cs">
-      <DependentUpon>ProductItemControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Register Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,12 +98,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RibbonForm3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RibbonForm3.Designer.cs">
-      <DependentUpon>RibbonForm3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Saticiİslemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,9 +106,6 @@
     </Compile>
     <EmbeddedResource Include="FluentDesignForm1.resx">
       <DependentUpon>FluentDesignForm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductItemControl.resx">
-      <DependentUpon>ProductItemControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Register Page.resx">
@@ -139,9 +124,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RibbonForm3.resx">
-      <DependentUpon>RibbonForm3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Saticiİslemleri.resx">
       <DependentUpon>Saticiİslemleri.cs</DependentUpon>
     </EmbeddedResource>
