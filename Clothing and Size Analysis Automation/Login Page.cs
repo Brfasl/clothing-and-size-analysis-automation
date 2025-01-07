@@ -89,7 +89,7 @@ namespace Login_And_Register_Page
                 if (reader.HasRows)
                 {
                     // Register formunu aç ve Login formunu kapat
-                    Saticiİslemleri stc = new Saticiİslemleri();// Register sayfasının formu
+                    CustomerProductView stc = new CustomerProductView();// Register sayfasının formu
                     stc.Show();  // Register sayfasını göster
                     this.Hide();
                     // Örnek: Ana sayfa

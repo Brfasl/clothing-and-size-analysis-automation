@@ -37,6 +37,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.ekleButton = new DevExpress.XtraEditors.SimpleButton();
             this.aciklama1 = new System.Windows.Forms.RichTextBox();
+            this.kategori1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.giyimSecenekleri1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.beden1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gogus1 = new DevExpress.XtraEditors.TextEdit();
             this.basen1 = new DevExpress.XtraEditors.TextEdit();
@@ -46,6 +48,8 @@
             this.urunAdi1 = new DevExpress.XtraEditors.TextEdit();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,6 +68,8 @@
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resim1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategori1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giyimSecenekleri1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beden1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gogus1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.basen1.Properties)).BeginInit();
@@ -88,7 +94,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(967, 622);
+            this.splitContainer1.Size = new System.Drawing.Size(967, 789);
             this.splitContainer1.SplitterDistance = 322;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -145,7 +151,7 @@
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
-            this.xtraTabControl1.Size = new System.Drawing.Size(322, 622);
+            this.xtraTabControl1.Size = new System.Drawing.Size(322, 789);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1});
@@ -169,6 +175,8 @@
             this.xtraTabPage1.Controls.Add(this.label10);
             this.xtraTabPage1.Controls.Add(this.ekleButton);
             this.xtraTabPage1.Controls.Add(this.aciklama1);
+            this.xtraTabPage1.Controls.Add(this.kategori1);
+            this.xtraTabPage1.Controls.Add(this.giyimSecenekleri1);
             this.xtraTabPage1.Controls.Add(this.beden1);
             this.xtraTabPage1.Controls.Add(this.gogus1);
             this.xtraTabPage1.Controls.Add(this.basen1);
@@ -178,6 +186,8 @@
             this.xtraTabPage1.Controls.Add(this.urunAdi1);
             this.xtraTabPage1.Controls.Add(this.label5);
             this.xtraTabPage1.Controls.Add(this.label6);
+            this.xtraTabPage1.Controls.Add(this.label12);
+            this.xtraTabPage1.Controls.Add(this.label11);
             this.xtraTabPage1.Controls.Add(this.label4);
             this.xtraTabPage1.Controls.Add(this.label3);
             this.xtraTabPage1.Controls.Add(this.label8);
@@ -186,7 +196,7 @@
             this.xtraTabPage1.Controls.Add(this.label7);
             this.xtraTabPage1.Controls.Add(this.label1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(316, 594);
+            this.xtraTabPage1.Size = new System.Drawing.Size(316, 761);
             this.xtraTabPage1.Text = "Ürün İşlemleri";
             // 
             // güncellemeButton
@@ -205,7 +215,7 @@
             this.güncellemeButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
             this.güncellemeButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
             this.güncellemeButton.AppearancePressed.Options.UseBackColor = true;
-            this.güncellemeButton.Location = new System.Drawing.Point(100, 564);
+            this.güncellemeButton.Location = new System.Drawing.Point(100, 689);
             this.güncellemeButton.Name = "güncellemeButton";
             this.güncellemeButton.Size = new System.Drawing.Size(117, 23);
             this.güncellemeButton.TabIndex = 8;
@@ -228,7 +238,7 @@
             this.silButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
             this.silButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
             this.silButton.AppearancePressed.Options.UseBackColor = true;
-            this.silButton.Location = new System.Drawing.Point(223, 564);
+            this.silButton.Location = new System.Drawing.Point(223, 689);
             this.silButton.Name = "silButton";
             this.silButton.Size = new System.Drawing.Size(90, 23);
             this.silButton.TabIndex = 8;
@@ -238,9 +248,9 @@
             // resim1
             // 
             this.resim1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.resim1.Location = new System.Drawing.Point(99, 248);
+            this.resim1.Location = new System.Drawing.Point(121, 332);
             this.resim1.Name = "resim1";
-            this.resim1.Size = new System.Drawing.Size(123, 119);
+            this.resim1.Size = new System.Drawing.Size(143, 137);
             this.resim1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.resim1.TabIndex = 7;
             this.resim1.TabStop = false;
@@ -250,7 +260,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(2, 248);
+            this.label10.Location = new System.Drawing.Point(3, 332);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 16);
             this.label10.TabIndex = 5;
@@ -272,7 +282,7 @@
             this.ekleButton.AppearancePressed.BackColor = System.Drawing.Color.DarkGray;
             this.ekleButton.AppearancePressed.BackColor2 = System.Drawing.Color.DimGray;
             this.ekleButton.AppearancePressed.Options.UseBackColor = true;
-            this.ekleButton.Location = new System.Drawing.Point(3, 564);
+            this.ekleButton.Location = new System.Drawing.Point(3, 689);
             this.ekleButton.Name = "ekleButton";
             this.ekleButton.Size = new System.Drawing.Size(91, 23);
             this.ekleButton.TabIndex = 4;
@@ -282,15 +292,44 @@
             // aciklama1
             // 
             this.aciklama1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.aciklama1.Location = new System.Drawing.Point(99, 370);
+            this.aciklama1.Location = new System.Drawing.Point(99, 495);
             this.aciklama1.Name = "aciklama1";
             this.aciklama1.Size = new System.Drawing.Size(214, 163);
             this.aciklama1.TabIndex = 3;
             this.aciklama1.Text = "";
             // 
+            // kategori1
+            // 
+            this.kategori1.Location = new System.Drawing.Point(120, 117);
+            this.kategori1.Name = "kategori1";
+            this.kategori1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.kategori1.Properties.Appearance.Options.UseBackColor = true;
+            this.kategori1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.kategori1.Properties.Items.AddRange(new object[] {
+            " Kadın",
+            "Erkek",
+            "Çocuk"});
+            this.kategori1.Size = new System.Drawing.Size(123, 20);
+            this.kategori1.TabIndex = 2;
+            // 
+            // giyimSecenekleri1
+            // 
+            this.giyimSecenekleri1.Location = new System.Drawing.Point(120, 82);
+            this.giyimSecenekleri1.Name = "giyimSecenekleri1";
+            this.giyimSecenekleri1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.giyimSecenekleri1.Properties.Appearance.Options.UseBackColor = true;
+            this.giyimSecenekleri1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.giyimSecenekleri1.Properties.Items.AddRange(new object[] {
+            "Alt Giyim",
+            "Üst Giyim"});
+            this.giyimSecenekleri1.Size = new System.Drawing.Size(123, 20);
+            this.giyimSecenekleri1.TabIndex = 2;
+            // 
             // beden1
             // 
-            this.beden1.Location = new System.Drawing.Point(99, 40);
+            this.beden1.Location = new System.Drawing.Point(120, 45);
             this.beden1.Name = "beden1";
             this.beden1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.beden1.Properties.Appearance.Options.UseBackColor = true;
@@ -307,7 +346,7 @@
             // 
             // gogus1
             // 
-            this.gogus1.Location = new System.Drawing.Point(99, 72);
+            this.gogus1.Location = new System.Drawing.Point(120, 156);
             this.gogus1.Name = "gogus1";
             this.gogus1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.gogus1.Properties.Appearance.Options.UseBackColor = true;
@@ -316,7 +355,7 @@
             // 
             // basen1
             // 
-            this.basen1.Location = new System.Drawing.Point(99, 138);
+            this.basen1.Location = new System.Drawing.Point(120, 222);
             this.basen1.Name = "basen1";
             this.basen1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.basen1.Properties.Appearance.Options.UseBackColor = true;
@@ -325,7 +364,7 @@
             // 
             // adet1
             // 
-            this.adet1.Location = new System.Drawing.Point(99, 174);
+            this.adet1.Location = new System.Drawing.Point(120, 258);
             this.adet1.Name = "adet1";
             this.adet1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.adet1.Properties.Appearance.Options.UseBackColor = true;
@@ -334,7 +373,7 @@
             // 
             // fiyat1
             // 
-            this.fiyat1.Location = new System.Drawing.Point(99, 209);
+            this.fiyat1.Location = new System.Drawing.Point(120, 293);
             this.fiyat1.Name = "fiyat1";
             this.fiyat1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.fiyat1.Properties.Appearance.Options.UseBackColor = true;
@@ -343,7 +382,7 @@
             // 
             // bel1
             // 
-            this.bel1.Location = new System.Drawing.Point(99, 105);
+            this.bel1.Location = new System.Drawing.Point(120, 189);
             this.bel1.Name = "bel1";
             this.bel1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.bel1.Properties.Appearance.Options.UseBackColor = true;
@@ -352,7 +391,7 @@
             // 
             // urunAdi1
             // 
-            this.urunAdi1.Location = new System.Drawing.Point(99, 12);
+            this.urunAdi1.Location = new System.Drawing.Point(120, 12);
             this.urunAdi1.Name = "urunAdi1";
             this.urunAdi1.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.urunAdi1.Properties.Appearance.Options.UseBackColor = true;
@@ -363,7 +402,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 141);
+            this.label5.Location = new System.Drawing.Point(4, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 19);
             this.label5.TabIndex = 0;
@@ -373,17 +412,37 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 108);
+            this.label6.Location = new System.Drawing.Point(4, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 19);
             this.label6.TabIndex = 0;
             this.label6.Text = "Bel (cm):";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(-1, 80);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(119, 18);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Giyim Seçenekleri";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1, 115);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 19);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Kategori";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 75);
+            this.label4.Location = new System.Drawing.Point(0, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 19);
             this.label4.TabIndex = 0;
@@ -401,7 +460,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 177);
+            this.label8.Location = new System.Drawing.Point(4, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 19);
             this.label8.TabIndex = 0;
@@ -421,7 +480,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 368);
+            this.label9.Location = new System.Drawing.Point(3, 493);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 19);
             this.label9.TabIndex = 0;
@@ -431,7 +490,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 212);
+            this.label7.Location = new System.Drawing.Point(4, 296);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 19);
             this.label7.TabIndex = 0;
@@ -464,7 +523,7 @@
             this.gridControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(641, 622);
+            this.gridControl1.Size = new System.Drawing.Size(641, 789);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -626,7 +685,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 622);
+            this.ClientSize = new System.Drawing.Size(967, 789);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Saticiİslemleri";
             this.Text = "Saticiİslemleri";
@@ -640,6 +699,8 @@
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.resim1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kategori1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giyimSecenekleri1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beden1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gogus1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.basen1.Properties)).EndInit();
@@ -683,5 +744,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private DevExpress.XtraEditors.SimpleButton güncellemeButton;
         private DevExpress.XtraEditors.SimpleButton silButton;
+        private DevExpress.XtraEditors.ComboBoxEdit kategori1;
+        private DevExpress.XtraEditors.ComboBoxEdit giyimSecenekleri1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }

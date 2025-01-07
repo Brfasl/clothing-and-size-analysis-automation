@@ -1,5 +1,4 @@
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Clothing and Size Analysis Automation.csprojAssemblyReference.cache
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.FluentDesignForm1.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.RegisterPage.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.LoginPage.resources
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Properties.Resources.resources
@@ -120,3 +119,4 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraRichEdit.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraRichEdit.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Saticiİslemleri.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.CustomerProductView.resources
