@@ -1,6 +1,6 @@
 ﻿namespace Login_And_Register_Page
 {
-    partial class CustomerProductView
+    partial class Musteriİslemleri
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.tileGroup1 = new DevExpress.XtraEditors.TileGroup();
@@ -65,7 +66,6 @@
             this.tileItem2 = new DevExpress.XtraEditors.TileItem();
             this.tileGroup8 = new DevExpress.XtraEditors.TileGroup();
             this.tileItem8 = new DevExpress.XtraEditors.TileItem();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -85,6 +85,13 @@
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
             this.fluentDesignFormContainer1.Size = new System.Drawing.Size(1195, 941);
             this.fluentDesignFormContainer1.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1186, 941);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // fluentFormDefaultManager1
             // 
@@ -342,14 +349,7 @@
             this.tileItem8.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem8.Name = "tileItem8";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1186, 941);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // CustomerProductView
+            // Musteriİslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -359,7 +359,7 @@
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Name = "CustomerProductView";
+            this.Name = "Musteriİslemleri";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Giyim Otomasyonu";
             this.Load += new System.EventHandler(this.FluentDesignForm1_Load);

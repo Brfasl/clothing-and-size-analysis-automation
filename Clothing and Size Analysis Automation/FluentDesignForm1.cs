@@ -7,11 +7,11 @@ using System.Windows.Forms;
 
 namespace Login_And_Register_Page
 {
-    public partial class CustomerProductView : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    public partial class Musteriİslemleri : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Berfin\\source\\repos\\Login And Register Page\\Clothing and Size Analysis Automation\\Database1.mdf;Integrated Security=True");
 
-        public CustomerProductView()
+        public Musteriİslemleri()
         {
             InitializeComponent();
         }

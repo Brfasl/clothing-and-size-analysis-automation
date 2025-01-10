@@ -117,4 +117,4 @@ C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis 
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ja\DevExpress.XtraRichEdit.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\bin\Debug\ru\DevExpress.XtraRichEdit.v21.2.resources.dll
 C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Saticiİslemleri.resources
-C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.CustomerProductView.resources
+C:\Users\Berfin\source\repos\Login And Register Page\Clothing and Size Analysis Automation\obj\Debug\Login_And_Register_Page.Musteriİslemleri.resources

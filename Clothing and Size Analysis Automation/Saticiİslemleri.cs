@@ -36,7 +36,7 @@ namespace Login_And_Register_Page
                     byte[] imageBytes = ms.ToArray(); // Binary formatına çevir
 
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO urun (UrunAdi, Beden, Kategori, Cinsiyet, Gogus, Bel, Basen, Adet, Fiyat, Aciklama, Resim)" +
+                    SqlCommand cmd = new SqlCommand("INSERT INTO urun (UrunAdi, Beden, Kategori, GiyimSecenekleri, Gogus, Bel, Basen, Adet, Fiyat, Aciklama, Resim)" +
                                                     "VALUES (@urunAdi, @beden, @kategori, @giyimSecenekleri, @gogus, @bel, @basen, @adet, @fiyat, @aciklama, @resim)", con);
                     cmd.Parameters.AddWithValue("@urunAdi", urunAdi1.Text);
                     cmd.Parameters.AddWithValue("@beden", beden1.SelectedItem);

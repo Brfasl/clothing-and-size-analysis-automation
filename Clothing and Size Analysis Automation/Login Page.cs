@@ -14,15 +14,32 @@ namespace Login_And_Register_Page
             InitializeComponent();
         }
 
-       
 
-        private void showPassword_CheckedChanged(object sender, EventArgs e)
+
+        private void LoginPage_Load(object sender, EventArgs e)
         {
+            // Şifre kutularını başlangıçta yıldız (*) ile gizle
+            password.UseSystemPasswordChar = false;
+
+
+            password.PasswordChar = '*';
+
+
+            // Paint olayını ekleyelim
+            closeButton.Paint += new PaintEventHandler(closeButton_Paint);
+
+            // Mouse olayları
+            closeButton.MouseHover += new EventHandler(closeButton_MouseHover);
+            closeButton.MouseLeave += new EventHandler(closeButton_MouseLeave);
+        }
+            private void showPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            // Şifreyi göster
+            password.UseSystemPasswordChar = false; // UseSystemPasswordChar'ı devre dışı bırak
+
             if (showPassword.Checked)
             {
-                // Şifreyi göster
-                password.UseSystemPasswordChar = false; // UseSystemPasswordChar'ı devre dışı bırak
-                
+               
 
                 password.PasswordChar = '\0'; // Şifreyi açık hale getir
                
@@ -68,66 +85,10 @@ namespace Login_And_Register_Page
             // Buton metnini ortalayarak çiziyoruz
             TextRenderer.DrawText(g, button.Text, button.Font, new Rectangle(0, 0, button.Width, button.Height), button.ForeColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
         }
-        private void login_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Veritabanına bağlan
-                con.Open();
 
-                // Kullanıcı bilgilerini kontrol eden SQL sorgusu
-                string query = "SELECT * FROM register WHERE Username = @username AND Password = @password";
-                SqlCommand cmd = new SqlCommand(query, con);
-
-                // Parametreleri ekle
-                cmd.Parameters.AddWithValue("@username", userName.Text);
-                cmd.Parameters.AddWithValue("@password", password.Text);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                // Giriş kontrolü
-                if (reader.HasRows)
-                {
-                    // Register formunu aç ve Login formunu kapat
-                    CustomerProductView stc = new CustomerProductView();// Register sayfasının formu
-                    stc.Show();  // Register sayfasını göster
-                    this.Hide();
-                    // Örnek: Ana sayfa
-
-                }
-                else
-                {
-                    MessageBox.Show("Invalid username or password.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                con.Close();
-            }
-        }
-
-        private void LoginPage_Load(object sender, EventArgs e)
-        {
-            // Şifre kutularını başlangıçta yıldız (*) ile gizle
-            password.UseSystemPasswordChar = false;
-            
-
-            password.PasswordChar = '*';
-
-
-            // Paint olayını ekleyelim
-            closeButton.Paint += new PaintEventHandler(closeButton_Paint);
-
-            // Mouse olayları
-            closeButton.MouseHover += new EventHandler(closeButton_MouseHover);
-            closeButton.MouseLeave += new EventHandler(closeButton_MouseLeave);
-
-
-        }
+       
+        
+       
 
         private void closeButton_MouseDown(object sender, MouseEventArgs e)
         {
@@ -177,5 +138,88 @@ namespace Login_And_Register_Page
         {
             this.Close();
         }
-    }
+
+        private void loginForCustomer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Veritabanına bağlan
+                con.Open();
+
+                // Kullanıcı bilgilerini kontrol eden SQL sorgusu
+                string query = "SELECT * FROM registerForCustomer WHERE Username = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                // Parametreleri ekle
+                cmd.Parameters.AddWithValue("@username", userName.Text);
+                cmd.Parameters.AddWithValue("@password", password.Text);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Giriş kontrolü
+                if (reader.HasRows)
+                {
+                    Musteriİslemleri mstr = new Musteriİslemleri();
+                    mstr.Show();  
+                    this.Hide();
+                   
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        private void loginForSeller_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Veritabanına bağlan
+                con.Open();
+
+                // Kullanıcı bilgilerini kontrol eden SQL sorgusu
+                string query = "SELECT * FROM registerForSeller WHERE Username = @username AND Password = @password";
+                SqlCommand cmd = new SqlCommand(query, con);
+
+                // Parametreleri ekle
+                cmd.Parameters.AddWithValue("@username", userName.Text);
+                cmd.Parameters.AddWithValue("@password", password.Text);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                // Giriş kontrolü
+                if (reader.HasRows)
+                {
+                    Saticiİslemleri stc = new Saticiİslemleri();
+                    stc.Show();  // Register sayfasını göster
+                    this.Hide();
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 }
+    }
+

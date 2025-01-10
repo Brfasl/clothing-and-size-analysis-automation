@@ -30,7 +30,6 @@
         {
             this.createAccount = new System.Windows.Forms.Label();
             this.dontHaveAccount = new System.Windows.Forms.Label();
-            this.login = new System.Windows.Forms.Button();
             this.showPassword = new System.Windows.Forms.CheckBox();
             this.password = new System.Windows.Forms.TextBox();
             this.userName = new System.Windows.Forms.TextBox();
@@ -38,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
+            this.loginForCustomer = new System.Windows.Forms.Button();
+            this.loginForSeller = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // createAccount
@@ -46,7 +47,7 @@
             this.createAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.createAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.createAccount.Location = new System.Drawing.Point(91, 444);
+            this.createAccount.Location = new System.Drawing.Point(88, 479);
             this.createAccount.Name = "createAccount";
             this.createAccount.Size = new System.Drawing.Size(95, 13);
             this.createAccount.TabIndex = 17;
@@ -57,26 +58,11 @@
             // 
             this.dontHaveAccount.AutoSize = true;
             this.dontHaveAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dontHaveAccount.Location = new System.Drawing.Point(79, 418);
+            this.dontHaveAccount.Location = new System.Drawing.Point(76, 453);
             this.dontHaveAccount.Name = "dontHaveAccount";
             this.dontHaveAccount.Size = new System.Drawing.Size(141, 13);
             this.dontHaveAccount.TabIndex = 18;
             this.dontHaveAccount.Text = "Don\'t Have An Account";
-            // 
-            // login
-            // 
-            this.login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.login.FlatAppearance.BorderSize = 0;
-            this.login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login.ForeColor = System.Drawing.Color.White;
-            this.login.Location = new System.Drawing.Point(36, 368);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(216, 35);
-            this.login.TabIndex = 16;
-            this.login.Text = "LOGIN";
-            this.login.UseVisualStyleBackColor = false;
-            this.login.Click += new System.EventHandler(this.login_Click);
             // 
             // showPassword
             // 
@@ -166,16 +152,47 @@
             this.closeButton.MouseHover += new System.EventHandler(this.closeButton_MouseHover);
             this.closeButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.closeButton_MouseUp);
             // 
+            // loginForCustomer
+            // 
+            this.loginForCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.loginForCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginForCustomer.FlatAppearance.BorderSize = 0;
+            this.loginForCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginForCustomer.ForeColor = System.Drawing.Color.White;
+            this.loginForCustomer.Location = new System.Drawing.Point(36, 354);
+            this.loginForCustomer.Name = "loginForCustomer";
+            this.loginForCustomer.Size = new System.Drawing.Size(216, 26);
+            this.loginForCustomer.TabIndex = 20;
+            this.loginForCustomer.Text = "LOGIN FOR CUSTOMER";
+            this.loginForCustomer.UseVisualStyleBackColor = false;
+            this.loginForCustomer.Click += new System.EventHandler(this.loginForCustomer_Click);
+            // 
+            // loginForSeller
+            // 
+            this.loginForSeller.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.loginForSeller.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginForSeller.FlatAppearance.BorderSize = 0;
+            this.loginForSeller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginForSeller.ForeColor = System.Drawing.Color.White;
+            this.loginForSeller.Location = new System.Drawing.Point(36, 390);
+            this.loginForSeller.Name = "loginForSeller";
+            this.loginForSeller.Size = new System.Drawing.Size(216, 23);
+            this.loginForSeller.TabIndex = 21;
+            this.loginForSeller.Text = "LOGIN FOR SELLER";
+            this.loginForSeller.UseVisualStyleBackColor = false;
+            this.loginForSeller.Click += new System.EventHandler(this.loginForSeller_Click);
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(285, 544);
+            this.Controls.Add(this.loginForCustomer);
+            this.Controls.Add(this.loginForSeller);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.createAccount);
             this.Controls.Add(this.dontHaveAccount);
-            this.Controls.Add(this.login);
             this.Controls.Add(this.showPassword);
             this.Controls.Add(this.password);
             this.Controls.Add(this.userName);
@@ -199,7 +216,6 @@
 
         private System.Windows.Forms.Label createAccount;
         private System.Windows.Forms.Label dontHaveAccount;
-        private System.Windows.Forms.Button login;
         private System.Windows.Forms.CheckBox showPassword;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox userName;
@@ -207,5 +223,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button loginForCustomer;
+        private System.Windows.Forms.Button loginForSeller;
     }
 }
