@@ -160,5 +160,12 @@ namespace Login_And_Register_Page
         {
             UrunleriListele("Çocuk", "Alt Giyim");
         }
+
+        private void bilgiGirisi_Click(object sender, EventArgs e)
+        {
+            bilgiGirisi bg = new bilgiGirisi();
+            bg.Show();
+            this.Hide();
+        }
     }
 }
