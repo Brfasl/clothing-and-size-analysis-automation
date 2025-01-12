@@ -11,14 +11,27 @@ using System.Windows.Forms;
 
 namespace Login_And_Register_Page
 {
+
     public partial class bilgiGirisi : Form
     {
+        // Buradaki TextBox'lar, formunuzdaki ilgili alanlardır
+        public TextBox gogusTextBox;
+        public TextBox belTextBox;
+        public TextBox basenTextBox;
+
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Berfin\\source\\repos\\Login And Register Page\\Clothing and Size Analysis Automation\\Database1.mdf;Integrated Security=True");
         public bilgiGirisi()
         {
             InitializeComponent();
         }
 
+        // SetMeasurements metodunu ekliyoruz
+        public void SetMeasurements(int gogus, int bel, int basen)
+        {
+            gogusTextBox.Text = gogus.ToString();
+            belTextBox.Text = bel.ToString();
+            basenTextBox.Text = basen.ToString();
+        }
         private void bilgiEkle_Click(object sender, EventArgs e)
         {
             Ekle();

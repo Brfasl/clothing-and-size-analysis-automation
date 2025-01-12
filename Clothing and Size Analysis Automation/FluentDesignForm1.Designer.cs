@@ -68,6 +68,7 @@
             this.tileItem2 = new DevExpress.XtraEditors.TileItem();
             this.tileGroup8 = new DevExpress.XtraEditors.TileGroup();
             this.tileItem8 = new DevExpress.XtraEditors.TileItem();
+            this.bilgiGoster = new System.Windows.Forms.ComboBox();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
@@ -371,12 +372,22 @@
             this.tileItem8.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
             this.tileItem8.Name = "tileItem8";
             // 
+            // bilgiGoster
+            // 
+            this.bilgiGoster.FormattingEnabled = true;
+            this.bilgiGoster.Location = new System.Drawing.Point(11, 409);
+            this.bilgiGoster.Name = "bilgiGoster";
+            this.bilgiGoster.Size = new System.Drawing.Size(173, 21);
+            this.bilgiGoster.TabIndex = 4;
+            this.bilgiGoster.SelectedIndexChanged += new System.EventHandler(this.bilgiGoster_SelectedIndexChanged);
+            // 
             // Musteriİslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1449, 972);
             this.ControlContainer = this.fluentDesignFormContainer1;
+            this.Controls.Add(this.bilgiGoster);
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
@@ -427,5 +438,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement bedenBilgisi;
         private DevExpress.XtraBars.Navigation.AccordionControlElement bilgiGirisi;
+        private System.Windows.Forms.ComboBox bilgiGoster;
     }
 }

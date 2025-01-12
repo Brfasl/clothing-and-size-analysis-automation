@@ -440,6 +440,7 @@
             // 
             // giyimSecenekleri
             // 
+            this.giyimSecenekleri.EditValue = "";
             this.giyimSecenekleri.Location = new System.Drawing.Point(128, 99);
             this.giyimSecenekleri.Name = "giyimSecenekleri";
             this.giyimSecenekleri.Properties.Appearance.BackColor = System.Drawing.SystemColors.ActiveBorder;
