@@ -49,26 +49,25 @@ namespace Login_And_Register_Page
             }
         }
 
-        public void UrunleriListele(int gogus, int bel, int basen, string kategori)
+        public void UrunleriListele(string kategori, string giyimSecenekleri)
         {
+            // Tek bir FlowLayoutPanel kullanıyoruz
             flowLayoutPanel1.Controls.Clear();
 
             try
             {
                 con.Open();
-                string query = "SELECT UrunAdi, Beden, Fiyat, Resim, Aciklama FROM urun WHERE Gogus <= @Gogus AND Bel <= @Bel AND Basen <= @Basen AND Kategori = @Kategori";
+                string query = "SELECT UrunAdi, Beden, Fiyat, Resim, Aciklama FROM urun WHERE Kategori = @Kategori AND GiyimSecenekleri = @GiyimSecenekleri";
                 SqlDataAdapter da = new SqlDataAdapter(query, con);
-                da.SelectCommand.Parameters.AddWithValue("@Gogus", gogus);
-                da.SelectCommand.Parameters.AddWithValue("@Bel", bel);
-                da.SelectCommand.Parameters.AddWithValue("@Basen", basen);
-                da.SelectCommand.Parameters.AddWithValue("@Kategori", kategori); // Kategoriyi sorguya ekledik
+                da.SelectCommand.Parameters.AddWithValue("@Kategori", kategori);
+                da.SelectCommand.Parameters.AddWithValue("@GiyimSecenekleri", giyimSecenekleri);
 
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
                 if (dt.Rows.Count == 0)
                 {
-                    MessageBox.Show("Ürün Yoktur.");
+                    MessageBox.Show("Bu kategoride ürün bulunamadı.");
                     return;
                 }
 
@@ -81,6 +80,7 @@ namespace Login_And_Register_Page
                         BorderStyle = BorderStyle.FixedSingle
                     };
 
+                    // Ürün adı
                     Label lblUrunAdi = new Label
                     {
                         Text = row["UrunAdi"].ToString(),
@@ -90,6 +90,7 @@ namespace Login_And_Register_Page
                     };
                     panel.Controls.Add(lblUrunAdi);
 
+                    // Ürün fiyatı
                     Label lblFiyat = new Label
                     {
                         Text = "Fiyat: " + row["Fiyat"].ToString() + " TL",
@@ -98,6 +99,7 @@ namespace Login_And_Register_Page
                     };
                     panel.Controls.Add(lblFiyat);
 
+                    // Ürün beden
                     Label lblBeden = new Label
                     {
                         Text = "Beden: " + row["Beden"].ToString(),
@@ -106,15 +108,9 @@ namespace Login_And_Register_Page
                     };
                     panel.Controls.Add(lblBeden);
 
-                    Label lblAciklama = new Label
-                    {
-                        Text = "Açıklama: " + row["Aciklama"].ToString(),
-                        Dock = DockStyle.Top,
-                        TextAlign = ContentAlignment.MiddleCenter,
-                        AutoSize = true
-                    };
-                    panel.Controls.Add(lblAciklama);
+                   
 
+                    // Ürün resmi
                     PictureBox pictureBox = new PictureBox
                     {
                         Width = 150,
@@ -130,7 +126,7 @@ namespace Login_And_Register_Page
                     }
                     else
                     {
-                        pictureBox.Image = null;
+                        pictureBox.Image = null; // Eğer resim yoksa null bırak
                     }
 
                     panel.Controls.Add(pictureBox);
@@ -154,6 +150,7 @@ namespace Login_And_Register_Page
                 return Image.FromStream(ms);
             }
         }
+      
 
         // ComboBox'taki seçim değiştiğinde çalışacak metod
         private void bilgiGoster_SelectedIndexChanged(object sender, EventArgs e)
@@ -168,7 +165,7 @@ namespace Login_And_Register_Page
             try
             {
                 con.Open();
-                string query = "SELECT Gogus, Bel, Basen, Kategori FROM girilenBilgi WHERE Name = @Name";
+                string query = "SELECT Gogus, Bel, Basen, Kategori,GiyimSecenekleri FROM girilenBilgi WHERE Name = @Name";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Name", selectedName);
 
@@ -179,12 +176,13 @@ namespace Login_And_Register_Page
                     int belValue = Convert.ToInt32(reader["Bel"]);
                     int basenValue = Convert.ToInt32(reader["Basen"]);
                     string kategori = reader["Kategori"].ToString(); // Kategori bilgisi
+                    string giyimSecenekleri = reader["GiyimSecenekleri"].ToString();
 
                     // Kategoriyi kullanarak beden önerisini yap
                     string recommendedSize = BedeniOner(kategori, gogusValue, belValue, basenValue);
                     MessageBox.Show($"Beden önerisi: {recommendedSize}");
 
-                    UrunleriListele(gogusValue, belValue, basenValue, kategori);
+                    UrunleriListele(kategori,giyimSecenekleri);
                 }
                 else
                 {
@@ -270,34 +268,37 @@ namespace Login_And_Register_Page
         }
 
         // Kategori butonlarının click eventleri
+
+
         private void KadinÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(90, 70, 95, "Kadın");
+            UrunleriListele("Kadın", "Üst Giyim");
+            
         }
 
         private void KadinAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(90, 70, 95, "Kadın");
+            UrunleriListele("Kadın", "Alt Giyim");
         }
 
         private void ErkekÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(100, 85, 95, "Erkek");
+            UrunleriListele("Erkek", "Üst Giyim");
         }
 
         private void ErkekAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(100, 85, 95, "Erkek");
+            UrunleriListele("Erkek", "Alt Giyim");
         }
 
         private void CocukÜstGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(60, 50, 55, "Çocuk");
+            UrunleriListele("Çocuk", "Üst Giyim");
         }
 
         private void CocukAltGiyim_Click(object sender, EventArgs e)
         {
-            UrunleriListele(60, 50, 55, "Çocuk");
+            UrunleriListele("Çocuk", "Alt Giyim");
         }
 
         // Bilgi girişi butonuna tıklanıldığında açılan form
